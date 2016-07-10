@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <link rel="shortcut icon" href="img/icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Department Of Complaints</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+   <style>
+       body{
+           margin-top: 5%;
+       }
+    </style>
+    <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <!--[if IE]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+   <link rel="stylesheet" href="mainpagestyle.css">
+    <style>
+        .borderblock{
+           
+            margin: 5px;
+            text-align: center;
+            border-radius: 5px;
+        }
+    </style>
+    </head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="profile.php">VIT Grievance Portal</a>
+            </div>
+
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li ><a href="profile.php">Home</a></li>
+                    <li><a href="aboutlogn.html">About</a></li>
+                    <li class="active"><a href="deptlogn.html">Department</a> </li>
+                    <li><a data-toggle="modal" data-target="#ContactModal">Contact</a></li>
+                </ul>
+            </div><!--.nav-collapse -->
+        </div>
+    </nav>
+
+    <div class="container">
+                <div id="DepartmentBlocks" style="color: white" class="col-md-12">
+        <div class="row" style="text-align:center">
+                <div class="col-md-3 borderblock" data-toggle="modal" data-target="#hosteldiscipline">
+                    <img src="img/displine.jpg" alt="discipline" class="img-circle"><br>hostel discipline</div>
+                <div class="col-md-3 borderblock" data-toggle="modal" data-target="#hostelfood">
+                    <img src="img/food.jpg" alt="food" class="img-circle"><br>hostel food</div>
+                 <div class="col-md-3 borderblock" data-toggle="modal" data-target="#hostelfinance">
+                     <img src="img/finance.png" alt="finance" class="img-circle"><br>hostel finance</div>
+                
+                    </div>
+                    <div class="row" style="text-align:center">
+                        <div class="col-md-3 borderblock" data-toggle="modal" data-target="#hostelBlocksuperviser">
+                             <img src="img/warden.jpg" alt="warden" class="img-circle"><br>hostel block superviser</div> 
+                 <div class="col-md-3 borderblock" data-toggle="modal" data-target="#hostelelecComplain">
+                      <img src="img/electrica;.jpg" alt="electrical" class="img-circle"><br>hostel electrical complaints</div>
+                <div class="col-md-3 borderblock" data-toggle="modal" data-target="#hostelwaterComplain">
+                     <img src="img/water.jpg" alt="water" class="img-circle"><br>hostel water complaints</div>
+                  </div>     
+                    <div class="row" style="text-align:center">
+                    <div class="col-md-3 borderblock" data-toggle="modal" data-target="#scope">
+                         <img src="img/scope.jpg" alt="scope" class="img-circle"><br>SCOPE academics</div>
+                <div class="col-md-3 borderblock" data-toggle="modal" data-target="#select">
+                     <img src="img/select.jpg" alt="select" class="img-circle"><br>SELECT ACADEMICS</div>
+                
+                <div class="col-md-3 borderblock" data-toggle="modal" data-target="#smbs">
+                     <img src="img/smbs.jpg" alt="smbs" class="img-circle"><br>SMBS ACADEMICS</div>
+                    </div>
+                    <div class="row" style="text-align:center">
+                    
+                        <div class="col-md-3 borderblock" data-toggle="modal" data-target="#sense">
+                             <img src="img/sense.jpg" alt="sense" class="img-circle"><br>SENSE ACADEMICS</div>
+                        <div class="col-md-3 borderblock" data-toggle="modal" data-target="#sbst">
+                             <img src="img/sbst.jpg" alt="sbst" class="img-circle"><br>SBST ACADEMICS</div>
+                
+                <div class="col-md-3 borderblock" data-toggle="modal" data-target="#rag">
+                     <img src="img/raggign.png" alt="rag" class="img-circle"><br>ragging reporting</div> 
+                                </div>
+                    <div class="row" style="text-align:center">
+                    <div class="col-md-3 borderblock" data-toggle="modal" data-target="#hostelsanitation">
+                         <img src="img/sanitation.jpg" alt="sanitation" class="img-circle"><br>hostel sanitation complaints</div>
+                    <div class="col-md-3 borderblock" data-toggle="modal" data-target="#scale">
+                         <img src="img/scale.jpg" alt="scale" class="img-circle"><br>SCALE ACADEMICS</div>
+                    <div class="col-md-3 borderblock " data-toggle="modal" data-target="#security">
+                         <img src="img/security.jpg" alt="security" class="img-circle"><br>Security Reporting</div>
+                    </div>
+                            </div>
+     <!--  /********************************************************************************************************************************/-->
+        <div class="modal fade" id="ContactModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Register New Grieavances</h4>
+            <hr>
+        </div>
+        <div class="modal-body">
+         <form>
+           <h3 style="color: black"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span> Subject:</h3>
+             <input type="text" class="form-control" id="Subject" placeholder="What is Bugging you">
+             <h3 style="color: black"><span class="glyphicon glyphicon-book" aria-hidden="true"></span>Description:</h3>
+             <textarea class="form-control" rows="5" id="description" placeholder="Tell us about the bug in detail.....!!!!!"></textarea>
+ 
+            </form>
+        </div>
+        <div class="modal-footer">
+        <button class="btn btn-success center-block"><h5><span class="glyphicon glyphicon-off"></span></h5>Submit</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+<!--  /********************************************************************************************************************************/-->
+               <div class="modal fade" id="hosteldiscipline" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Department of Hostel Discipline</h4>
+            <hr>
+        </div>
+        <div class="modal-body">
+			The Hostel Discipline Department is responsible for maintaining all the odd activities 
+				like smoking etc.
+		 </div>
+        
+      </div>
+      
+    </div>
+  </div>
+<!--/****************************************************************************************************************************************/-->
+               <div class="modal fade" id="hostelfood" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Department of Hostel Food</h4>
+            <hr>
+        </div>
+        <div class="modal-body">
+			The Hostel Discipline Department is responsible for maintaining all the odd activities 
+				like smoking etc.
+		 </div>
+        
+      </div>
+      
+    </div>
+  </div>
+<!--/****************************************************************************************************************************************/-->
+           <div class="modal fade" id="hostelfinance" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Department of Hostel FInance</h4>
+            <hr>
+        </div>
+        <div class="modal-body">
+			The Hostel Discipline Department is responsible for maintaining all the odd activities 
+				like smoking etc.
+		 </div>
+        
+      </div>
+      
+    </div>
+  </div>
+<!--/****************************************************************************************************************************************/-->
+           <div class="modal fade" id="hostelBlocksuperviser" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Hostel Block Supervisor</h4>
+            <hr>
+        </div>
+        <div class="modal-body">
+			The Hostel Discipline Department is responsible for maintaining all the odd activities 
+				like smoking etc.
+		 </div>
+        
+      </div>
+      
+    </div>
+  </div>
+<!--/****************************************************************************************************************************************/-->
+               <div class="modal fade" id="hostelelecComplain" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Department Of Electrical Complaints</h4>
+            <hr>
+        </div>
+        <div class="modal-body">
+			The Hostel Discipline Department is responsible for maintaining all the odd activities 
+				like smoking etc.
+		 </div>
+        
+      </div>
+      
+    </div>
+  </div>
+<!--/****************************************************************************************************************************************/-->
+           <div class="modal fade" id="hostelwaterComplain" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Department Of Water Complaints</h4>
+            <hr>
+        </div>
+        <div class="modal-body">
+			The Hostel Discipline Department is responsible for maintaining all the odd activities 
+				like smoking etc.
+		 </div>
+        
+      </div>
+      
+    </div>
+  </div>
+<!--/****************************************************************************************************************************************/-->
+               <div class="modal fade" id="scope" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">SCOPE</h4>
+            <hr>
+        </div>
+        <div class="modal-body">
+			The Hostel Discipline Department is responsible for maintaining all the odd activities 
+				like smoking etc.
+		 </div>
+        
+      </div>
+      
+    </div>
+  </div>
+<!--/****************************************************************************************************************************************/-->
+               <div class="modal fade" id="select" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">SELECT</h4>
+            <hr>
+        </div>
+        <div class="modal-body">
+			The Hostel Discipline Department is responsible for maintaining all the odd activities 
+				like smoking etc.
+		 </div>
+        
+      </div>
+      
+    </div>
+  </div>
+<!--/****************************************************************************************************************************************/-->
+        <div class="modal fade" id="smbs" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">SMBS</h4>
+            <hr>
+        </div>
+        <div class="modal-body">
+			The Hostel Discipline Department is responsible for maintaining all the odd activities 
+				like smoking etc.
+		 </div>
+        
+      </div>
+      
+    </div>
+  </div>
+<!--/****************************************************************************************************************************************/-->
+        <div class="modal fade" id="sense" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">SENSE</h4>
+            <hr>
+        </div>
+        <div class="modal-body">
+			The Hostel Discipline Department is responsible for maintaining all the odd activities 
+				like smoking etc.
+		 </div>
+        
+      </div>
+      
+    </div>
+  </div>
+<!--/****************************************************************************************************************************************/-->  <div class="modal fade" id="sbst" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">SBST</h4>
+            <hr>
+        </div>
+        <div class="modal-body">
+			The Hostel Discipline Department is responsible for maintaining all the odd activities 
+				like smoking etc.
+		 </div>
+        
+      </div>
+      
+    </div>
+  </div>
+<!--/****************************************************************************************************************************************/-->  <div class="modal fade" id="rag" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Ragging Reporting Portal</h4>
+            <hr>
+        </div>
+        <div class="modal-body">
+			The Hostel Discipline Department is responsible for maintaining all the odd activities 
+				like smoking etc.
+		 </div>
+        
+      </div>
+      
+    </div>
+  </div>
+<!--/****************************************************************************************************************************************/-->  <div class="modal fade" id="hostelsanitation" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Department Of Hostel Sanitation</h4>
+            <hr>
+        </div>
+        <div class="modal-body">
+			The Hostel Discipline Department is responsible for maintaining all the odd activities 
+				like smoking etc.
+		 </div>
+        
+      </div>
+      
+    </div>
+  </div>
+<!--/****************************************************************************************************************************************/-->  <div class="modal fade" id="scale" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">SCALE</h4>
+            <hr>
+        </div>
+        <div class="modal-body">
+			The Hostel Discipline Department is responsible for maintaining all the odd activities 
+				like smoking etc.
+		 </div>
+        
+      </div>
+      
+    </div>
+  </div>
+<!--/****************************************************************************************************************************************/-->  <div class="modal fade" id="security" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Security Issue Portal</h4>
+            <hr>
+        </div>
+        <div class="modal-body">
+			The Hostel Discipline Department is responsible for maintaining all the odd activities 
+				like smoking etc.
+		 </div>
+        
+      </div>
+      
+    </div>
+  </div>
+<!--/****************************************************************************************************************************************/-->        
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>

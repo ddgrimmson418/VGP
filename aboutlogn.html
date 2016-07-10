@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <link rel="shortcut icon" href="img/icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <style>body{padding-top:50px;}.starter-template{padding:40px 15px;text-align:center;}</style>
+    <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="mainpagestyle.css">
+    <!--[if IE]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        table img{
+            height: 200px;
+            width: 200px;
+            margin-bottom: 10px;
+            border: solid 2px blue;
+        }
+        table td {
+            text-align: center;
+            padding: 10px 10px 10px 10px;
+        }
+        body{
+            background-color: coral;
+            color: whitesmoke;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="profile.php">VIT Grievance Portal</a>
+            </div>
+
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li ><a href="profile.php">Home</a></li>
+                    <li class="active"><a href="aboutlogn.html">About</a></li>
+                    <li ><a href="deptlogn.html">Department</a> </li>
+                   <li ><a data-toggle="modal" data-target="#ContactModal">Contact</a></li>
+                </ul>
+            </div><!--.nav-collapse -->
+        </div>
+    </nav>
+
+    <div class="container">
+       <div class="row">
+        <div class="col-md-3 space">
+        </div>
+        <div class="col-md-9">
+        <h2 class="ceter-block">From The developer Teams</h2>
+            <table>
+            <tr>
+                <td><img src="img/me.jpg" alt="Deepanshu" class="img-circle"></td><td>Deepanshu Dixit<br> 13BCE0714</td></tr>
+                <tr><td><img src="img/2.jpg" alt="Ashmeet" class="img-circle">  </td><td>Ashmeet Singh <br> 13BCE0123</td></tr>
+                 <tr><td><img src="img/2.jpg" alt="Pranav" class="img-circle">  </td><td>Pranav Sharma <br> 13BCE0123</td></tr>
+                 <tr><td><img src="img/2.jpg" alt="aalekh" class="img-circle">  </td><td>Aalekh Shrivastava <br> 13BCE0123</td></tr>
+                
+            </table>
+            </div>
+            <h3 style="text-align:center"> Why We Decided To Do this...!</h3>
+           <hr style="color:brown">
+           <p>
+           We Believe that the problems are something if solved can make the life all the more easier, enjoyable and also that not many can do it. the governance where the center holds the power has always been a triumphant sucess rather than the distribution of the power that reduces the resposibility. this is also creates a kind of a wreck by introduction of too many by laws and the common crowd is rendered helpless of the information about who can do what.....!!!! This portal allows one to directly send their grievance to the higher officials, hence the chain flow of command is from top to down rather than the bottom up.
+           </p>
+                       <br>
+           <h3 style="text-align:center">Do You Like What We Are Doing!!?</h3>
+           <hr>
+           <p>
+           If You really do then let us know through your positive feedbacks in the contact sections which will help our project become official. But for now this website will soon go live on ddgrimmson418.com . Kindly Let us know the if you have a better layout design and we will try to recreate that and take your design Live and include you on the above mentioned list of developer team . DO Support Us for We are trying to become Revolutionary</p>
+        </div>
+        
+        
+         <div class="modal fade" id="ContactModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Register New Grieavances</h4>
+            <hr>
+        </div>
+        <div class="modal-body">
+         <form>
+           <h3 style="color: black"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span> Subject:</h3>
+             <input type="text" class="form-control" id="Subject" placeholder="What is Bugging you">
+             <h3 style="color: black"><span class="glyphicon glyphicon-book" aria-hidden="true"></span>Description:</h3>
+             <textarea class="form-control" rows="5" id="description" placeholder="Tell us about the bug in detail.....!!!!!"></textarea>
+ 
+            </form>
+        </div>
+        <div class="modal-footer">
+        <button class="btn btn-success center-block"><h5><span class="glyphicon glyphicon-off"></span></h5>Submit</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>
